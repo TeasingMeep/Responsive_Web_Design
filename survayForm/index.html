@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Generic Survay Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Generic Title</h1>
+        <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati optio dolore ad dolor ullam.</p>
+    </div>
+    
+    <div class="container">
+        <form action="" id="survey-form">
+            <div class="important-info">
+                <input type="text" placeholder="Enter full name" class="NEA" id="name" required>
+                <label for="name" id="name-label">Name</label>
+
+                <input type="email" placeholder="Enter email" class="NEA" id="email" required>
+                <label for="email" id="email-label">Email</label>
+
+                <input type="number" placeholder="Age" class="NEA" id="number" min="1" max="100">
+                <label for="number" id="number-label">Age</label>
+            </div>
+            <div class="radio-div">
+                <label for="raido-list" class="list-label">Please choose one option:</label>
+                <ul id="radio-list">
+                    <li><input type="radio" value="radio-val1" name="raido-button" class="radio-btn">Option 1</li>
+                    <li><input type="radio" value="radio-val2" name="raido-button" class="radio-btn">Option 2</li>
+                    <li><input type="radio" value="radio-val3" name="raido-button" class="radio-btn">Option 3</li>
+                </ul>
+            </div>
+
+            <div class="check-div">
+                <label for="check-list" class="list-label">Please choose multiple option:</label>
+                <ul id="check-list">
+                    <li><input type="checkbox" value="check-val1" name="check1" class="check-box">Option 1</li>
+                    <li><input type="checkbox" value="check-val2" name="check2" class="check-box">Option 2</li>
+                    <li><input type="checkbox" value="check-val3" name="check3" class="check-box">Option 3</li>
+                    <li><input type="checkbox" value="check-val4" name="check4" class="check-box">Option 4</li>
+                    <li><input type="checkbox" value="check-val5" name="check5" class="check-box">Option 5</li>
+                </ul>
+            </div>
+            
+            <div class="dropdown-div">
+                <label for="dropdown-options">Choose from dropdown</label>
+                <select name="dropdown-options" id="dropdown">
+                    <option value="o1">option 1</option>
+                    <option value="o2">option 2</option>
+                    <option value="o3">option 3</option>
+                    <option value="o4">option 4</option>
+                    <option value="o5">option 5</option>
+                </select>
+            </div>
+
+            <div class="textarea-div">
+                <label for="textarea">Any other comments</label>
+                <textarea name="textarea" id="text-area" maxlength="500" placeholder="Max characters is 500"></textarea>
+            </div>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
