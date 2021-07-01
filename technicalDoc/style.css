@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+main {
+    margin: .5em 2em;
+}
+
+section {
+    margin: 1em 0;
+}
+h1,h2,h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 2.6rem;
+    padding: .5em 0;
+}
+
+h2 {
+    font-size: 2.35rem;
+}
+
+p {
+    margin: 2em 1em;
+}
+
+ul {
+    margin: 1em 2em;
+}
+
+.code-div {
+    max-width: 100%;
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: .35rem;
+}
+@media screen and (min-width: 900px) {
+    main {
+        margin-left: 320px;
+    }
+    section {
+        margin: 1em 2em;
+    }
+    
+    article {
+        margin: 1em 3em;
+    }
+
+    ul {
+        margin: 1em 3em;;
+    }
+}
+
+/* Navegation */
+.side-bar {
+    background-color: rgb(136, 135, 135);
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    font-size: 1.2rem;
+}
+#navbar {
+    max-width: 100%;
+}
+#navbar header {
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    font-size: 1.5rem;
+}
+#navbar #nav-list {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+#nav-list li {
+    padding: .23em 0;
+    border-bottom: 2px solid #333;
+}
+
+li .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-list li:hover {
+    background-color: darkgray;
+}
+
+li .nav-link:hover,
+li .nav-link:focus {
+    text-decoration: underline;
+}
+@media screen and (min-width: 900px) {
+    .side-bar {
+        width: 300px;
+        margin: 0;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+}
